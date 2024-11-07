@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Bank Management System - Payments</title>
+</head>
+<body>
+    <h1>Payments List</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'donors' %}">Donors</a></li>
+            <li><a href="{% url 'patients' %}">Patients</a></li>
+            <li><a href="{% url 'hospitals' %}">Hospitals</a></li>
+            <li><a href="{% url 'payments' %}">Payments</a></li>
+            <li><a href="{% url 'admin' %}">Admin</a></li>
+        </ul>
+    </nav>
+    <ul>
+        {% for payment in payments %}
+            <li>Donor: {{ payment.donor.name }} - Amount: {{ payment.amount }} - Date: {{ payment.date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

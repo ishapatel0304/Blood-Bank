@@ -1,0 +1,40 @@
+/* static/management/styles.css */
+body {
+    background-image: url('{% static "management/background.jpg" %}');
+    }
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.content {
+    margin-top: 60px;
+    text-align: center;
+    color: black;
+}
